@@ -1,15 +1,14 @@
 
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
   return (
     <>
+      <Navbar></Navbar>
       
       
-      <h1 className='text-7xl'>hello world</h1>
-      <button className="btn btn-primary">Primary</button>
-      <button className="btn btn-outline btn-secondary">Secondary</button>
 
     </>
   )
