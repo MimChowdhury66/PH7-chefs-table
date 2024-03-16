@@ -30,12 +30,21 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end ">
-                    <label className="input input-bordered flex items-center gap-2 rounded-full  w-[100px] lg:p-[16px] lg:w-[260px]">
-                        <CiSearch />
 
-                        <input type="text" className="grow " placeholder="Search" />
+                    <label className="input input-bordered flex items-center ">
+                        <CiSearch />
+                        <input type="text" className="w-[60px] lg:w-[240px] p-0" placeholder="Search" />
 
                     </label>
+                    {/* <div className="flex items-center bg-slate-100 lg:pl-6 rounded-full ">
+                    <CiSearch  />
+
+                        <input    type="text" className="bg-slate-100 w-[90px] lg:w-[240px] rounded-full lg:py-3" placeholder=" Search"/>
+                   </div> */}
+
+
+
+
                     <button className="btn rounded-full bg-[#0BE58A] text-xl ml-2"><FaRegUserCircle />
                     </button>
                 </div>
