@@ -1,9 +1,11 @@
 import { MdOutlineAccessTime } from "react-icons/md";
 import { FaFire } from "react-icons/fa";
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
-
-const SingleRecipe = ({ recipe }) => {
+const SingleRecipe = ({ recipe, handleCook }) => {
+    // console.log(handleCook)
     // console.log(recipe);
     const { recipe_image, recipe_name, short_description, preparing_time, calories, ingredients } = recipe;
     return (
@@ -35,7 +37,9 @@ const SingleRecipe = ({ recipe }) => {
                             <p>{calories} </p></div>
                     </div>
                     <div className="card-actions justify-start">
-                        <button className="btn bg-[#0BE58A] rounded-full">Want to Cook</button>
+                        <button onClick={(e) => handleCook(recipe)} className="btn bg-[#0BE58A] rounded-full">Want to Cook</button>
+                        <ToastContainer />
+
                     </div>
                 </div>
             </div>
